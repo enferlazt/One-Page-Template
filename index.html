@@ -2,8 +2,8 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<link rel="shortcut icon" href="/pictures/AWT-Plane.ico" />
-	<title>Info Website Template html/css - LazB </title>
+	<link rel="shortcut icon" href="image/mazda.ico" />
+	<title>Website Template - Enferlazt </title>
 	<link rel="stylesheet" type="text/css" href="source/bootstrap-3.3.6-dist/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style/slider.css">
 	<link rel="stylesheet" type="text/css" href="style/mystyle.css">
@@ -144,6 +144,8 @@
 							<li><a href="#">2016</a></li>
 							<li><a href="#">2017</a></li>
 							<li><a href="#">2018</a></li>
+							<li><a href="#">2019</a></li>
+							<li><a href="#">2020</a></li>
 						</ul>
 					</li>
 					<li class="li-slideprice">
@@ -166,9 +168,9 @@
 	<ul class="nav nav-tabs navbar-left latest-navleft">
 		<li role="presentation" class="li-sortby"><span class="sortby">SORT BY: </span></li>
 		<li data-filter=".NEWEST" role="presentation"><a href="#newest" class="prcBtnO">NEWEST</a></li>
-		<li  role="presentation"><a href="#" class="alphSort">ALPHABETICAL</a></li>
-		<li data-filter=".HPRICE" role="presentation"><a href="#" class="prcBtnH">HIGHEST PRICE</a></li>
-		<li data-filter=".LPRICE" role="presentation"><a href="#" class="prcBtnL">LOWEST PRICE</a></li>
+		<li data-filter=".ALPH" role="presentation"><a href="#alph" class="alphSort">ALPHABETICAL</a></li>
+		<li data-filter=".HPRICE" role="presentation"><a href="#descprice" class="prcBtnH">HIGHEST PRICE</a></li>
+		<li data-filter=".LPRICE" role="presentation"><a href="#ascprice" class="prcBtnL">LOWEST PRICE</a></li>
 		<li id="hideonmobile">
 	</ul>
 </div>
@@ -192,11 +194,8 @@
 								<p>"Lorem ipsum dolor sit amet, consectetur,<br>
 	 							sed do eiusmod tempor incididunt" </p>
 	 							<h4 class="price">30000 &dollar;</h4>
-	 							
 	 							<a href="#car1" class="open_modal">READ MORE</a><br>
 							</div>
-							
-							
 							<div class="stars2">
 								<div class="glyphicon glyphicon-star"></div>
 								<div class="glyphicon glyphicon-star"></div>
@@ -337,7 +336,7 @@
 			<div class="col-lg-6 costumcol colborder1">
 				<div class="row costumrow">
 					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 img1colon">
-						<img src="image/history.jpg" alt="porsche">
+						<img src="image/history.jpg">
 					</div>
 					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 txt1colon ">
 						<div class="featurecontant">
@@ -359,7 +358,7 @@
 			<div class="col-lg-6 costumcol colborder2">
 				<div class="row costumrow">
 					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 img2colon">
-						<img src="image/history1.jpg" alt="porsche1">
+						<img src="image/history1.jpg">
 					</div>
 					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 txt1colon ">
 						<div class="featurecontant">
@@ -380,7 +379,7 @@
 			<div class="col-lg-6 costumcol colborder3">
 				<div class="row costumrow">
 					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 img1colon">
-						<img src="image/history1.jpg" alt="porsche">
+						<img src="image/history1.jpg">
 					</div>
 					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 txt1colon ">
 						<div class="featurecontant">
@@ -404,7 +403,7 @@
 			<div class="col-lg-6 costumcol colborder4">
 				<div class="row costumrow">
 					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 img2colon">
-						<img src="image/history.jpg" alt="porsche">
+						<img src="image/history.jpg">
 					</div>
 					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 txt1colon ">
 						<div class="featurecontant">
@@ -641,13 +640,11 @@ marker.setMap(map);
 <script>
 	$(window).resize(function(){
 		var new_height = $("#image_border").height();
-		console.log(new_height);
 		$("#googleMap").height(new_height);
 	});
 
 	$(window).load(function(){
 		var new_height = $("#image_border").height();
-		console.log(new_height);
 		$("#googleMap").height(new_height);
 		google.maps.event.addDomListener(window, 'load', initialize());
 	});
